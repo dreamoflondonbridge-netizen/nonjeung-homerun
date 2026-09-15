@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#121b3a">
   <title>논증 홈런 | 국어 학습 미니게임</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ffcc33'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='38'%3E⚾%3C/text%3E%3C/svg%3E">
   <style>
     :root{--navy:#121b3a;--blue:#2257a8;--sky:#43b8e8;--yellow:#ffd23f;--red:#ff5a5f;--cream:#fff8e7;--ink:#17213d;--green:#37a86e;--dirt:#c77b49}
@@ -205,6 +209,19 @@
     .result-popup.has-template #feedbackText{padding:11px 13px;color:#273452;font-size:16px;line-height:1.6;white-space:pre-line;max-height:none;overflow:visible}
     .result-popup.has-template .next{position:relative;left:auto;top:auto;width:auto;grid-column:1/-1;margin:3px auto 0;padding:11px 28px;border:3px solid #10214e;border-radius:12px;background:#2b68bd;color:#fff;box-shadow:0 5px 0 #15356f;font-size:18px}
     @media(max-width:650px){.result-popup.has-template .result-overlay{padding:12px 12px 18px;gap:8px}.result-popup.has-template .result-field{padding:8px 5px}.result-popup.has-template .result-label{font-size:9px}.result-popup.has-template .result-field strong{font-size:18px}.result-popup.has-template .explain-title{font-size:13px}.result-popup.has-template #feedbackText{font-size:14px;line-height:1.5}.result-popup.has-template .next{font-size:16px;padding:10px 25px}}
+  
+    /* 네온 픽셀 결과 카드 스타일 */
+    .result-popup.has-template{border:4px solid #42f5ff;box-shadow:0 0 0 3px #ff3fc8,0 0 22px #42f5ff,10px 10px 0 #050a18;background:#080f2d;border-radius:12px}
+    .result-popup.has-template .result-overlay{background:linear-gradient(180deg,#0c1740 0%,#101943 100%);padding:16px 18px 21px}
+    .result-popup.has-template .result-field{border:2px solid #42f5ff;background:linear-gradient(180deg,#152b63,#0a1538);box-shadow:0 0 8px rgba(66,245,255,.7),inset 0 0 12px rgba(66,245,255,.14);border-radius:5px}
+    .result-popup.has-template .result-label{font-family:'Press Start 2P','Courier New',monospace;font-size:clamp(8px,1.3vw,12px);color:#ffeb63;text-shadow:0 0 6px #ff4fc8;letter-spacing:1px}
+    .result-popup.has-template .result-field strong{font-family:'Silkscreen','Courier New',monospace;font-size:clamp(17px,2.7vw,27px);color:#fff;text-shadow:0 0 5px #42f5ff,2px 2px 0 #ff3fc8}
+    .result-popup.has-template .explain-panel{border:2px solid #ffcf4a;background:linear-gradient(180deg,#161f4a,#0b1230);box-shadow:0 0 10px rgba(255,207,74,.42);border-radius:6px}
+    .result-popup.has-template .explain-title{font-family:'Press Start 2P','Courier New',monospace;color:#ffeb63;text-shadow:0 0 7px #ff3fc8;border-bottom:2px dashed #ffcf4a;font-size:clamp(9px,1.5vw,14px)}
+    .result-popup.has-template #feedbackText{font-family:'Silkscreen','Malgun Gothic',sans-serif;color:#e8f7ff;text-shadow:0 0 4px rgba(66,245,255,.35);font-size:clamp(11px,1.6vw,16px);line-height:1.65}
+    .result-popup.has-template .next{font-family:'Press Start 2P','Malgun Gothic',sans-serif;border:3px solid #ffeb63;border-radius:5px;background:linear-gradient(180deg,#ff4fc8,#9d35d9);box-shadow:0 0 10px #ff3fc8,0 5px 0 #4c1e85;color:#fff;text-shadow:2px 2px 0 #4c1e85;letter-spacing:-1px}
+    .result-popup.has-template .next:hover{filter:brightness(1.18);box-shadow:0 0 18px #ff3fc8,0 5px 0 #4c1e85}
+    @media(max-width:650px){.result-popup.has-template{border-width:3px}.result-popup.has-template .result-overlay{padding:12px 11px 17px}.result-popup.has-template .result-field strong{font-size:16px}.result-popup.has-template #feedbackText{font-size:11px}.result-popup.has-template .next{font-size:12px}}
   </style>
 </head>
 <body>
