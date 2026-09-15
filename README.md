@@ -28,3 +28,15 @@
     {type:'method',label:'설명 방법',question:'문제 내용',options:['정의','예시','비교','분류'],answer:'정의',explanation:'정답인 이유를 설명합니다.'},
 
 사용 가능한 type은 `argument`, `method`, `structure`, `analysis`, `boss`입니다. 일반 문제를 9개 이상 넣고, `boss` 문제는 마지막 문제용으로 1개 유지하세요. 수정 후 Commit changes를 누르면 GitHub Pages에 자동 반영됩니다.
+
+
+## 타격 결과 이미지 바꾸기
+
+`images` 폴더에 아래 이름으로 이미지를 넣으면 결과 팝업의 글자 대신 해당 이미지가 표시됩니다. 이미지가 없으면 기본 글자가 표시됩니다.
+
+- 안타: `hit.png`
+- 2루타: `double.png`
+- 3루타: `triple.png`
+- 홈런: `homerun.png`
+
+이미지를 올린 뒤 GitHub Pages가 갱신되면 학생 화면에도 동일하게 표시됩니다.
