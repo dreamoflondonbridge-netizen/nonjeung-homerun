@@ -37,6 +37,15 @@
     @media(max-width:650px){
       .field .batter{transform:translate(-50%,-50%) scale(.95)}
     }
+  
+    /* 업로드 배경만 남기기: 장식용 경기장 레이어 제거 */
+    /* 업로드한 stadium-bg.png 위에 겹치던 기존 경기장 장식 제거 */
+    .field .stands,
+    .field .fence,
+    .field .diamond,
+    .field .grass-inner,
+    .field .foul-line,
+    .field .scoreboard{display:none!important}
   </style>
 </head>
 <body>
