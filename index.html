@@ -149,6 +149,15 @@
     /* 해설 아래 다음 투구 버튼을 별도 배치 */
     .result-popup.has-template .explain-panel{top:45%;height:18%}
     .result-popup.has-template .next{top:65%;height:auto;display:block;visibility:visible!important;opacity:1!important}
+  
+    /* 기존 모달 제거 및 모바일 빈칸 보정 */
+    /* 새 이미지 템플릿만 보이도록 예전 PLAY RESULT 외곽 모달 제거 */
+    .result-popup:before{display:none!important}
+    .result-popup.has-template{border:0;box-shadow:none;background:transparent;overflow:visible}
+    /* 트로피 오른쪽의 실제 빈 공간에 SCORE 배치 */
+    .result-popup.has-template .score-field{left:25%;top:34%;width:13%}
+    .result-popup.has-template .score-field strong{white-space:nowrap;font-size:clamp(13px,2.4vw,25px)}
+    @media(max-width:650px){.result-popup.has-template .score-field{left:25%;width:14%}.result-popup.has-template .score-field strong{font-size:14px}}
   </style>
 </head>
 <body>
