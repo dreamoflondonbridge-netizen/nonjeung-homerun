@@ -62,6 +62,11 @@
     @media(max-width:650px){
       .field .pitcher{width:60px!important;height:70px!important}
     }
+  
+    /* 투수 이미지에 포함된 공과 별도 공의 중복 방지 */
+    /* 대기 중에는 pitcher.png 속 공만 보이고, 답을 고른 뒤 애니메이션 공을 표시 */
+    .field:not(.pitch):not(.hit):not(.runner-double):not(.runner-triple):not(.runner-home):not(.miss) .ball{opacity:0!important}
+    .field.pitch .ball,.field.hit .ball,.field.runner-double .ball,.field.runner-triple .ball,.field.runner-home .ball,.field.miss .ball{opacity:1}
   </style>
 </head>
 <body>
