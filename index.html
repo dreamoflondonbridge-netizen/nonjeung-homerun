@@ -190,6 +190,21 @@
       .result-popup.has-template .explain-panel{top:49%;height:20%}
       .result-popup.has-template .next{top:73%}
     }
+  
+    /* 결과 이미지는 위, 데이터 팝업은 아래로 분리 */
+    .result-popup.has-template{width:min(760px,100%);aspect-ratio:auto;min-height:0;height:auto;padding:0;border:5px solid #101a3a;border-radius:22px;background:#fff8e7;box-shadow:10px 10px 0 #050a18,0 0 0 5px #ffd45b;overflow:hidden}
+    .result-popup.has-template .result-bg{position:relative;inset:auto;width:100%;height:auto;display:block;object-fit:contain;vertical-align:top}
+    .result-popup.has-template .result-overlay{position:relative;inset:auto;width:100%;height:auto;min-height:0;padding:15px 18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:9px 10px;background:#fff8e7;text-align:center}
+    .result-popup.has-template .result-kicker,.result-popup.has-template .result-overlay>h3{display:none}
+    .result-popup.has-template .result-field{position:relative;left:auto;top:auto;width:auto;height:auto;min-width:0;margin:0;padding:9px 8px;border:3px solid #1d3266;border-radius:12px;background:#e9f6ff;box-shadow:3px 3px 0 #9db5d4;display:flex;flex-direction:column;gap:3px;color:#17336d;text-shadow:none}
+    .result-popup.has-template .score-field,.result-popup.has-template .timing-field{display:flex}
+    .result-popup.has-template .result-label{font:900 11px/1 monospace;letter-spacing:1px;color:#315187}
+    .result-popup.has-template .result-field strong{font:900 clamp(19px,3vw,28px)/1 'Arial Rounded MT Bold','Trebuchet MS',sans-serif;color:#17336d;white-space:nowrap}
+    .result-popup.has-template .explain-panel{position:relative;left:auto;top:auto;width:auto;height:auto;grid-column:1/-1;margin:2px 0 0;border:3px solid #d49b42;border-radius:14px;background:#fff3ce;box-shadow:inset 0 0 0 3px #ffe7a1;text-align:left}
+    .result-popup.has-template .explain-title{padding:9px 12px;border-bottom:2px dashed #d49b42;font-size:15px}
+    .result-popup.has-template #feedbackText{padding:11px 13px;color:#273452;font-size:16px;line-height:1.6;white-space:pre-line;max-height:none;overflow:visible}
+    .result-popup.has-template .next{position:relative;left:auto;top:auto;width:auto;grid-column:1/-1;margin:3px auto 0;padding:11px 28px;border:3px solid #10214e;border-radius:12px;background:#2b68bd;color:#fff;box-shadow:0 5px 0 #15356f;font-size:18px}
+    @media(max-width:650px){.result-popup.has-template .result-overlay{padding:12px 12px 18px;gap:8px}.result-popup.has-template .result-field{padding:8px 5px}.result-popup.has-template .result-label{font-size:9px}.result-popup.has-template .result-field strong{font-size:18px}.result-popup.has-template .explain-title{font-size:13px}.result-popup.has-template #feedbackText{font-size:14px;line-height:1.5}.result-popup.has-template .next{font-size:16px;padding:10px 25px}}
   </style>
 </head>
 <body>
