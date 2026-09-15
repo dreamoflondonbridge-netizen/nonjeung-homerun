@@ -78,6 +78,9 @@
     .field.hit .batter,.field.runner-double .batter,.field.runner-triple .batter,.field.runner-home .batter{opacity:0!important}
     .field .runner.running{animation-duration:2.4s!important}
     @media(max-width:650px){.field .runner{width:29px!important;height:41px!important}}
+  
+    /* 주자 이미지 pseudo 요소 표시 보정 */
+    .field .runner::before{content:''!important;position:absolute!important;display:block!important;inset:0!important;background-image:url('./images/runner.png')!important;background-repeat:no-repeat!important;background-position:center!important;background-size:contain!important;pointer-events:none!important;z-index:20!important}
   </style>
 </head>
 <body>
