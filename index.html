@@ -158,6 +158,22 @@
     .result-popup.has-template .score-field{left:25%;top:34%;width:13%}
     .result-popup.has-template .score-field strong{white-space:nowrap;font-size:clamp(13px,2.4vw,25px)}
     @media(max-width:650px){.result-popup.has-template .score-field{left:25%;width:14%}.result-popup.has-template .score-field strong{font-size:14px}}
+  
+    /* 결과 이미지 기준 좌표계 고정 */
+    .result-popup.has-template{width:min(760px,100%);aspect-ratio:3/2;min-height:0;height:auto;padding:0;border:0;box-shadow:none;background:transparent;overflow:hidden}
+    .result-popup.has-template .result-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;display:block}
+    .result-popup.has-template .result-overlay{position:absolute;inset:0;width:100%;height:100%;padding:0;display:block}
+    .result-popup.has-template .result-field{position:absolute;margin:0;min-width:0;height:10%;padding:2px;border:0;border-radius:8px;background:transparent;box-shadow:none;display:flex;flex-direction:column;gap:1px;color:#fff;text-shadow:2px 2px 0 #071328}
+    .result-popup.has-template .score-field{left:22%;top:39%;width:13%}
+    .result-popup.has-template .hit-field{left:46%;top:39%;width:14%;background:#071b35;border-radius:8px}
+    .result-popup.has-template .timing-field{left:67%;top:39%;width:15%}
+    .result-popup.has-template .result-label{font-size:clamp(8px,1.4vw,13px);color:#ffd45b}
+    .result-popup.has-template .result-field strong{font-size:clamp(13px,2.4vw,24px);color:#fff;white-space:nowrap}
+    .result-popup.has-template .explain-panel{position:absolute;left:13%;top:53%;width:74%;height:20%;margin:0;border:0;border-radius:10px;background:rgba(255,243,206,.9);box-shadow:none}
+    .result-popup.has-template .explain-title{padding:4px 10px;font-size:clamp(10px,1.6vw,15px)}
+    .result-popup.has-template #feedbackText{padding:5px 10px;font-size:clamp(10px,1.55vw,15px);line-height:1.4;max-height:calc(100% - 28px);overflow:hidden}
+    .result-popup.has-template .next{position:absolute;left:31%;top:77%;width:38%;margin:0;padding:7px 10px;font-size:clamp(12px,1.9vw,17px);z-index:3}
+    @media(max-width:650px){.result-popup.has-template .score-field{left:22%;width:14%}.result-popup.has-template .result-label{font-size:8px}.result-popup.has-template .result-field strong{font-size:13px}.result-popup.has-template #feedbackText{font-size:10px}.result-popup.has-template .next{font-size:13px;padding:6px 8px}}
   </style>
 </head>
 <body>
