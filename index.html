@@ -261,6 +261,19 @@
     .gauge span{font-size:clamp(8px,1.05vw,10px)}
     .gauge span:nth-child(4)::after{font-size:clamp(7px,.9vw,9px)}
     @media(max-width:650px){.gauge-label{font-size:8px;gap:4px;letter-spacing:-.6px}.gauge-label span:last-child{font-size:7px;letter-spacing:-.8px}.gauge span{font-size:8px}}
+  
+    /* 최종 게임 결과 화면 네온 픽셀 레트로 카드 */
+    #result{padding:2vh 0 4vh}
+    .result-card{background:linear-gradient(180deg,#0c1740 0%,#111b46 100%);border:4px solid #42f5ff;border-radius:12px;box-shadow:0 0 0 3px #ff3fc8,0 0 24px rgba(66,245,255,.4),10px 10px 0 #050a18;color:#eaf8ff;padding:clamp(20px,4vw,34px)}
+    .result-card h1{color:#ffeb63;font-family:'Press Start 2P','Malgun Gothic',monospace;font-size:clamp(22px,4.5vw,42px);text-shadow:3px 3px 0 #ff3fc8,0 0 12px #42f5ff;letter-spacing:1px}
+    .score-big{color:#fff;font-family:'Silkscreen','Malgun Gothic',sans-serif;font-size:clamp(54px,10vw,92px);line-height:1;text-shadow:4px 4px 0 #ff3fc8,0 0 18px #42f5ff}
+    .score-big::before{content:'FINAL SCORE';display:block;margin-bottom:10px;color:#8ff3ff;font:10px 'Press Start 2P',monospace;letter-spacing:1px;text-shadow:0 0 7px #42f5ff}
+    .stats{gap:12px;margin:26px 0}.stat{background:linear-gradient(180deg,#182b62,#0c173b);border:2px solid #42f5ff;border-radius:6px;box-shadow:0 0 9px rgba(66,245,255,.45),3px 3px 0 #07102b;color:#dff8ff;font-family:'Silkscreen','Malgun Gothic',sans-serif}.stat b{color:#ffeb63;font-family:'Press Start 2P','Malgun Gothic',monospace;font-size:clamp(17px,3vw,25px);text-shadow:0 0 7px #ff3fc8}
+    .grade{background:linear-gradient(180deg,#35175b,#151a4a);border:3px solid #ffcf4a;border-radius:6px;box-shadow:0 0 14px rgba(255,207,74,.55);color:#ffeb63;font-family:'Silkscreen','Malgun Gothic',sans-serif;font-size:clamp(22px,4vw,34px);text-shadow:0 0 8px #ff3fc8}
+    .grade div{color:#e8f7ff!important;font-family:'Press Start 2P',monospace;text-shadow:0 0 6px #42f5ff}
+    .learning{margin-top:24px;border-top:2px dashed #42f5ff;padding-top:18px}.learning h3{color:#ffeb63;font-family:'Press Start 2P','Malgun Gothic',monospace;font-size:clamp(13px,2vw,18px);text-shadow:0 0 7px #ff3fc8}.learn{background:#101f4b;border:1px solid #3478a8;border-radius:5px;color:#e8f7ff;font-family:'Silkscreen','Malgun Gothic',sans-serif}.learn b{color:#8ff3ff;font-family:'Press Start 2P',monospace;font-size:clamp(10px,1.5vw,13px)}.concept{border-top:2px dashed #ffcf4a;color:#d9f5ff;font-family:'Silkscreen','Malgun Gothic',sans-serif}.concept>b{color:#ffeb63;font-family:'Press Start 2P','Malgun Gothic',monospace;font-size:clamp(11px,1.8vw,15px);text-shadow:0 0 7px #ff3fc8}.concept strong{color:#ffcf4a}
+    .result-card .primary{font-family:'Press Start 2P','Malgun Gothic',sans-serif;background:linear-gradient(180deg,#42d9ff,#2465d8);border:3px solid #8ff3ff;box-shadow:0 0 12px #42d9ff,0 5px 0 #163b8f;text-shadow:2px 2px 0 #163b8f;border-radius:5px}.result-card .primary:hover{filter:brightness(1.15);box-shadow:0 0 20px #42d9ff,0 5px 0 #163b8f}
+    @media(max-width:650px){#result{padding:1vh 0 3vh}.result-card{padding:20px 13px}.stats{gap:8px}.stat{padding:10px 5px;font-size:13px}.stat b{font-size:16px}.grade{font-size:22px}.learning h3{font-size:12px}.learn{font-size:14px}.concept{font-size:14px;line-height:1.7}.result-card .primary{font-size:13px;padding:12px 19px}}
   </style>
 </head>
 <body>
