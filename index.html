@@ -24,6 +24,19 @@
     .field{background-image:url('./images/stadium-bg.png'),linear-gradient(#4faf6d 0 26%,#378d58 26% 100%)!important;background-size:cover,cover;background-position:center,center}
     .pixel-player{isolation:isolate}.pixel-player::before{content:'';position:absolute;inset:-4px;z-index:20;background-repeat:no-repeat;background-position:center;background-size:contain;pointer-events:none}.pixel-player .head,.pixel-player .body,.pixel-player .leg,.pixel-player .bat{z-index:2}.batter::before{background-image:url('./images/batter.png')}.pitcher::before{background-image:url('./images/pitcher.png')}.runner::before{background-image:url('./images/runner.png')}.d1::before{background-image:url('./images/defender-1.png')}.d2::before{background-image:url('./images/defender-2.png')}.d3::before{background-image:url('./images/defender-3.png')}.d4::before{background-image:url('./images/defender-4.png')}
     .ball{background-image:url('./images/baseball.png');background-repeat:no-repeat;background-position:center;background-size:contain}
+  
+    /* 위치 및 배경 레이어 보정: 업로드한 통합 배경을 우선 사용 */
+    /* 통합 배경에 이미 관중석·외야 펜스가 포함되어 있으므로 기존 장식은 숨김 */
+    .field .stands,.field .fence{display:none!important}
+    /* 2루와 투수를 화면 뒤쪽으로 이동 */
+    .field .second{top:39%!important}
+    .field .second-label{top:31%!important}
+    .field .pitcher{top:57%!important}
+    /* 타자를 홈플레이트 하단 가운데에 배치 */
+    .field .batter{left:50%!important;right:auto!important;top:84%!important;transform:translate(-50%,-50%) scale(1.18)}
+    @media(max-width:650px){
+      .field .batter{transform:translate(-50%,-50%) scale(.95)}
+    }
   </style>
 </head>
 <body>
