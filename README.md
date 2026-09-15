@@ -46,7 +46,7 @@
 
 결과 팝업은 배경 이미지와 실시간 HTML 텍스트를 분리해 사용합니다. `images` 폴더에 아래 파일을 올리면 타격 결과에 맞는 배경이 자동 선택됩니다.
 
-- 1루타: `single-result.png`
+- 1루타: `hit-result.png`
 - 2루타: `double-result.png`
 - 3루타: `triple-result.png`
 - 홈런: `homerun-result.png`
