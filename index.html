@@ -160,6 +160,7 @@
   <section id="result" class="screen"><div id="resultCard" class="result-card"></div></section>
 </main>
 <div id="feedback" class="feedback"><div id="feedbackBox" class="feedback-box result-popup"><img id="resultBg" class="result-bg" alt=""><div class="result-overlay"><div class="result-kicker">⚾ PLAY RESULT ⚾</div><h3 id="feedbackTitle"></h3><div class="result-field score-field"><span class="result-label">SCORE</span><strong id="scoreLine"></strong></div><div class="result-field hit-field"><span class="result-label">HIT</span><strong id="resultHit"></strong></div><div class="result-field timing-field"><span class="result-label">TIMING</span><strong id="resultTiming"></strong></div><div class="explain-panel"><div class="explain-title">📚 문제 해설</div><div id="feedbackText"></div></div><button id="nextBtn" class="next">다음 투구</button></div></div></div>
+<script src="./questions.js"></script>
 <script>
   const $=s=>document.querySelector(s); let deck=[],index=0,score=0,combo=0,high=Number(localStorage.getItem('argumentHomerunHigh')||0),strikes=0,correct=0,homers=0,maxCombo=0,answered=false,sound=true,stats={argument:[0,0],method:[0,0],structure:[0,0],analysis:[0,0]};
   $('#highScore').textContent=String(high).padStart(4,'0');
